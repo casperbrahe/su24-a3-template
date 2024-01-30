@@ -4,5 +4,5 @@
 ### Code
 Clone the handed out code to your machine with `git clone <repository-url>`.
 
-### Assignment test
+### Assignment text
 [A3](../master/A3.pdf).
