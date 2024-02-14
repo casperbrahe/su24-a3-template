@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Testing SortingCards",
+      "setup": "",
+      "run": "dotnet run --project SortingCards",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Testing TicTacToe",
+      "setup": "",
+      "run": "dotnet test -l \"console;verbosity=normal\" TicTacToeTest",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Run TA tests",
+      "setup": "dotnet build TicTacToe --framework net6.0 --output TicTacToeTestTA && curl -H 'Authorization: token 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' -O -L https://raw.githubusercontent.com/casperbrahe/su24-a3-template-tests/main/TicTacToeTestTA.zip && unzip TicTacToeTestTA -d TicTacToeTestTA",
+      "run": "dotnet test -l \"console;verbosity=normal\" TicTacToeTestTA/TicTacToeTestTA.dll",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 80
+    }
+  ]
+}
